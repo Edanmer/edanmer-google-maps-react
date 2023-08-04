@@ -126,7 +126,7 @@ export const wrapper = (input, className, style) => WrappedComponent => {
       });
 
       return (
-        <div className={className} style={style}>
+        <div className={className} style={{ flex:1} }>
           <WrappedComponent {...props} />
           <div ref={this.mapRef} />
         </div>
